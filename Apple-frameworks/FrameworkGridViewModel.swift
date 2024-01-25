@@ -2,7 +2,11 @@
 //  FrameworkGridViewModel.swift
 //  Apple-frameworks
 //
-//  Created by kejos on 26/01/2024.
+//  Created by 'Codevibe' on 26/01/2024.
 //
 
-import Foundation
+import SwiftUI
+
+class FrameworkGridViewModel: ObservableObject{
+    
+}

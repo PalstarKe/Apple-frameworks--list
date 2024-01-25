@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8801AED22B6324E300622675 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801AED12B6324E300622675 /* FrameworkGridViewModel.swift */; };
 		881E509F2B61EB6F00C203ED /* Apple_frameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E509E2B61EB6F00C203ED /* Apple_frameworksApp.swift */; };
 		881E50A32B61EB7600C203ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881E50A22B61EB7600C203ED /* Assets.xcassets */; };
 		881E50A72B61EB7600C203ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881E50A62B61EB7600C203ED /* Preview Assets.xcassets */; };
 		881E50CA2B61F71E00C203ED /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E50C92B61F71E00C203ED /* Framework.swift */; };
 		881E50CC2B61FB5100C203ED /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E50CB2B61FB5100C203ED /* FrameworkGridView.swift */; };
 		881E50CE2B620DBA00C203ED /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E50CD2B620DBA00C203ED /* FrameworkDetailView.swift */; };
+		88F605FF2B630D2E00EDCAB7 /* AFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F605FE2B630D2E00EDCAB7 /* AFButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8801AED12B6324E300622675 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		881E509B2B61EB6F00C203ED /* Apple-frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		881E509E2B61EB6F00C203ED /* Apple_frameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_frameworksApp.swift; sourceTree = "<group>"; };
 		881E50A22B61EB7600C203ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		881E50C92B61F71E00C203ED /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		881E50CB2B61FB5100C203ED /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		881E50CD2B620DBA00C203ED /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		88F605FE2B630D2E00EDCAB7 /* AFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,12 @@
 				881E509E2B61EB6F00C203ED /* Apple_frameworksApp.swift */,
 				881E50CB2B61FB5100C203ED /* FrameworkGridView.swift */,
 				881E50CD2B620DBA00C203ED /* FrameworkDetailView.swift */,
+				88F605FE2B630D2E00EDCAB7 /* AFButton.swift */,
 				881E50C92B61F71E00C203ED /* Framework.swift */,
 				881E50A22B61EB7600C203ED /* Assets.xcassets */,
 				881E50A42B61EB7600C203ED /* Apple_frameworks.entitlements */,
 				881E50A52B61EB7600C203ED /* Preview Content */,
+				8801AED12B6324E300622675 /* FrameworkGridViewModel.swift */,
 			);
 			path = "Apple-frameworks";
 			sourceTree = "<group>";
@@ -243,7 +249,9 @@
 				881E50CE2B620DBA00C203ED /* FrameworkDetailView.swift in Sources */,
 				881E50CC2B61FB5100C203ED /* FrameworkGridView.swift in Sources */,
 				881E509F2B61EB6F00C203ED /* Apple_frameworksApp.swift in Sources */,
+				88F605FF2B630D2E00EDCAB7 /* AFButton.swift in Sources */,
 				881E50CA2B61F71E00C203ED /* Framework.swift in Sources */,
+				8801AED22B6324E300622675 /* FrameworkGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
