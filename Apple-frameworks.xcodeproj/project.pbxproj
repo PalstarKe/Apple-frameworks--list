@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8801AED22B6324E300622675 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801AED12B6324E300622675 /* FrameworkGridViewModel.swift */; };
 		8801AED42B63313900622675 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801AED32B63313900622675 /* SafariView.swift */; };
+		8801AED62B6339A800622675 /* FrameworkTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801AED52B6339A800622675 /* FrameworkTitleView.swift */; };
+		8801AEDA2B633AC300622675 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801AED92B633AC300622675 /* XDismissButton.swift */; };
 		881E509F2B61EB6F00C203ED /* Apple_frameworksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881E509E2B61EB6F00C203ED /* Apple_frameworksApp.swift */; };
 		881E50A32B61EB7600C203ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881E50A22B61EB7600C203ED /* Assets.xcassets */; };
 		881E50A72B61EB7600C203ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881E50A62B61EB7600C203ED /* Preview Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		8801AED12B6324E300622675 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 		8801AED32B63313900622675 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		8801AED52B6339A800622675 /* FrameworkTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleView.swift; sourceTree = "<group>"; };
+		8801AED92B633AC300622675 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		881E509B2B61EB6F00C203ED /* Apple-frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple-frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		881E509E2B61EB6F00C203ED /* Apple_frameworksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_frameworksApp.swift; sourceTree = "<group>"; };
 		881E50A22B61EB7600C203ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +80,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8801AEDB2B633D4100622675 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8801AEDE2B633DAD00622675 /* GrindViews */,
+				8801AEDF2B633DE700622675 /* DetailViews */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8801AEDC2B633D5900622675 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				881E50C92B61F71E00C203ED /* Framework.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8801AEDD2B633D9D00622675 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8801AEE12B633E5100622675 /* View */,
+				8801AEE02B633E2E00622675 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8801AEDE2B633DAD00622675 /* GrindViews */ = {
+			isa = PBXGroup;
+			children = (
+				8801AED12B6324E300622675 /* FrameworkGridViewModel.swift */,
+				881E50CB2B61FB5100C203ED /* FrameworkGridView.swift */,
+			);
+			path = GrindViews;
+			sourceTree = "<group>";
+		};
+		8801AEDF2B633DE700622675 /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				881E50CD2B620DBA00C203ED /* FrameworkDetailView.swift */,
+			);
+			path = DetailViews;
+			sourceTree = "<group>";
+		};
+		8801AEE02B633E2E00622675 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				8801AED92B633AC300622675 /* XDismissButton.swift */,
+				88F605FE2B630D2E00EDCAB7 /* AFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		8801AEE12B633E5100622675 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8801AED52B6339A800622675 /* FrameworkTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8801AEE22B633E7400622675 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				8801AED32B63313900622675 /* SafariView.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
 		881E50922B61EB6F00C203ED = {
 			isa = PBXGroup;
 			children = (
@@ -97,16 +169,14 @@
 		881E509D2B61EB6F00C203ED /* Apple-frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8801AEE22B633E7400622675 /* UIKit Components */,
+				8801AEDD2B633D9D00622675 /* Views */,
+				8801AEDC2B633D5900622675 /* Models */,
+				8801AEDB2B633D4100622675 /* Screens */,
 				881E509E2B61EB6F00C203ED /* Apple_frameworksApp.swift */,
-				881E50CB2B61FB5100C203ED /* FrameworkGridView.swift */,
-				8801AED32B63313900622675 /* SafariView.swift */,
-				881E50CD2B620DBA00C203ED /* FrameworkDetailView.swift */,
-				88F605FE2B630D2E00EDCAB7 /* AFButton.swift */,
-				881E50C92B61F71E00C203ED /* Framework.swift */,
 				881E50A22B61EB7600C203ED /* Assets.xcassets */,
 				881E50A42B61EB7600C203ED /* Apple_frameworks.entitlements */,
 				881E50A52B61EB7600C203ED /* Preview Content */,
-				8801AED12B6324E300622675 /* FrameworkGridViewModel.swift */,
 			);
 			path = "Apple-frameworks";
 			sourceTree = "<group>";
@@ -251,10 +321,12 @@
 			files = (
 				881E50CE2B620DBA00C203ED /* FrameworkDetailView.swift in Sources */,
 				881E50CC2B61FB5100C203ED /* FrameworkGridView.swift in Sources */,
+				8801AEDA2B633AC300622675 /* XDismissButton.swift in Sources */,
 				881E509F2B61EB6F00C203ED /* Apple_frameworksApp.swift in Sources */,
 				88F605FF2B630D2E00EDCAB7 /* AFButton.swift in Sources */,
 				881E50CA2B61F71E00C203ED /* Framework.swift in Sources */,
 				8801AED22B6324E300622675 /* FrameworkGridViewModel.swift in Sources */,
+				8801AED62B6339A800622675 /* FrameworkTitleView.swift in Sources */,
 				8801AED42B63313900622675 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
