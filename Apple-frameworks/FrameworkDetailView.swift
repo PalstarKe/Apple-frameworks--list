@@ -9,6 +9,8 @@ import SwiftUI
 
 
 struct FrameworkDetailView: View {
+    @Binding var isShowingDetailView: Bool
+    @State private var isShowingSafariView = false
     let framework: Framework
     
     var body: some View {
@@ -16,10 +18,10 @@ struct FrameworkDetailView: View {
             HStack{
                 Spacer()
                 Button{
-                    
+                    isShowingDetailView = false
                 }label: {
                     Image(systemName: "xmark")
-                        .foregroundColor(Color(.label))
+                        .foregroundStyle(Color(.label))
                         .imageScale(.large)
                         .frame(width: 44, height: 44)
                 }
@@ -37,15 +39,18 @@ struct FrameworkDetailView: View {
             Spacer()
             
             Button{
-                
+                isShowingSafariView = true
             } label: {
                 AFButton(title: "Learn More")
             }
         }
+        .sheet(isPresented: $isShowingSafariView, content: {
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+        })
     }
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework)
+    FrameworkDetailView(isShowingDetailView: .constant(false), framework: MockData.sampleFramework)
 //        .preferredColorScheme(.dark)
 }

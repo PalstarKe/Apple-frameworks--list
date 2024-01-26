@@ -2,7 +2,18 @@
 //  SafariView.swift
 //  Apple-frameworks
 //
-//  Created by kejos on 26/01/2024.
+//  Created by 'Codevibe' on 26/01/2024.
 //
 
-import Foundation
+import SwiftUI
+import SafariServices
+
+struct SafariView: UIViewControllerRepresentable{
+    
+    let url: URL
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<SafariView>) -> SFSafariViewController{
+       SFSafariViewController(url: url)
+    }
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: UIViewControllerRepresentableContext<SafariView>) {}
+}
